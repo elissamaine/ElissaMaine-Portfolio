@@ -6,7 +6,7 @@ import Header from './Header';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-import Home from './pages/Home.js';
+import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
@@ -36,15 +36,17 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
   
   return (
-    <div className="PortfolioContainer">
+    <div>
       <Header />
+      
       
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       
       {renderPage()}
       
       <Footer />
+      <h1>heloo</h1>
       
-      </div>
+    </div>
   )
-}; 
+}
