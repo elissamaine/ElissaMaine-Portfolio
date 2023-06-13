@@ -1,0 +1,43 @@
+.header {
+  background-color: #baaaacff;
+  border-bottom: 1px solid #baaaacff;
+  height: 60px;
+  line-height: 60px;
+  padding: 10px;
+  // position: fixed;
+  // top: 0;
+  // width: 100%;
+  // z-index: 999;
+  display: flex;
+  justify-content: center;
+
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    border: 3px solid #715151ff;
+    background-color: #715151ff;
+    color: #f5e4e6ff;
+    border-radius: 25px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: space-between;
+    font-family: 'Moirai One', cursive;
+    text-shadow: 1px 2px 2px #d6d7d1ff;
+    box-shadow: 2px 3px 3px #976e77ff;
+    animation: fadeInDown;
+    animation-duration: 2s;
+  }
+}
+
+
+
+
+
+.varela-round {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.moirai-one {
+  font-family: 'Moirai One', cursive;
+}
