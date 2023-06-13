@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div>
-        <p>Made with <FontAwesomeIcon icon={faHeart} /> by Elissa Maine</p>
+        <p>Made with <FontAwesomeIcon icon={faHeart} color='#976e77ff' /> by Elissa Maine</p>
       </div>
     </div>  
   );
