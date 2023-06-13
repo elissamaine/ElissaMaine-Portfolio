@@ -6,12 +6,20 @@ $rose-quartz: #baaaacff;
 $mountbatten-pink: #976e77ff;
 $rose-ebony: #715151ff;
 
+$dark-green: #1F2A18ff;
+$bistre: #402E1Eff;
+$dark-green-2: #26301Aff;
+$old-rose: #C1828Aff;
+$rosy-brown: #AB858Bff;
+$cal-poly-green: #2D3B1Cff;
+$dark-green-3: #1B2514ff;
+
 @import 'animate.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300&family=Moirai+One&family=Quicksand:wght@300;600&family=Varela+Round&display=swap');
 
 body {
-  background-color: $ebony;
-  color: $timberwolf;
+  background-color: rgb(74, 81, 68);
+  color: #f5e4e6ff;
   font-family: 'Maitree', serif;
 }
