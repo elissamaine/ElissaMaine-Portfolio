@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 import Header from './Header';
 // import Navbar from './Navbar';
-// import Footer from './Footer';
+import Footer from './Footer';
 
 // import Home from './pages/Home';
 // import About from './pages/About';
@@ -44,7 +44,7 @@ export default function PortfolioContainer() {
       
       {/* {renderPage()} */}
       
-      {/* <Footer /> */}
+      <Footer />
       <h1>heloo</h1>
       
     </div>
