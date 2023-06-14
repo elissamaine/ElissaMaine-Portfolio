@@ -1,28 +1,28 @@
 .header {
-  background-color: #baaaacff;
-  border-bottom: 1px solid #baaaacff;
+  background-color: rgba(62, 82, 76, 0.774);
+  border-bottom: 1px solid rgba(68, 90, 83, 0.774);
   height: 60px;
   line-height: 60px;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.8;
+
 
   h1 {
     font-size: 2rem;
     margin: 0;
-    border: 3px solid #715151ff;
-    background-color: #715151ff;
-    color: #f5e4e6ff;
+    border: 3px solid #232e1eff;
+    background-color: #232e1eff;
+    color: #e6ffe0ff;
     border-radius: 25px;
     padding: 0px 10px;
     display: flex;
     align-items: space-between;
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
-    text-shadow: 1px 2px 2px #402E1Eff;
-    box-shadow: 2px 3px 3px #976e77ff;
+    text-shadow: 1px 1px 2px rgb(82, 110, 102);
+    box-shadow: 2px 3px 3px rgb(82, 110, 102);
     animation: fadeInDown;
     animation-duration: 2s;
     opacity: 1;
