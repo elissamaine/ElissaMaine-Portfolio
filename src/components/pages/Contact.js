@@ -1,6 +1,6 @@
 import './Contact.scss';
 
-import React, { Component } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact = () => {
@@ -37,11 +37,17 @@ const Contact = () => {
         </ul>
       </form>
     </div>
-    <div>
+    <div className='social'>
       <p>Contact form is under constuction. Other places that you can find me are here</p>
-      <ul>
-        <li>
-          
+      <ul className='social-links'>
+        <li className='linked-in'>
+          <a href="https://www.linkedin.com/in/elissa-maine-a9b4a3210/"><FontAwesomeIcon icon={faLinkedIn} /></a>
+        </li>
+        <li className='git-hub'>
+          <a href="https://github.com/elissamaine"><FontAwesomeIcon icon={faGitHub} /></a>
+        </li>
+        <li className='leet-code'>
+          <a href="https://leetcode.com/elissamaine/"><FontAwesomeIcon icon={faCode} bounce /></a>
         </li>
       </ul>
     </div>
