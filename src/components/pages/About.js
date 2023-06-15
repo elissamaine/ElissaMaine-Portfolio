@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='about-page'>
+    <main className='about-page'>
       <div className='about'>
         <h1>About Me</h1>
         <p>
@@ -21,8 +21,8 @@ export default function About() {
         </p>
       </div>
       <div className='me'>
-        <img src="../../images/me.jpg" alt="Elissa Maine" />
+        {/* <img src="../../images/me.jpg" alt="Elissa Maine" /> */}
       </div>
-    </div>
+    </main>
   );
 }

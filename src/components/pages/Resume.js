@@ -4,7 +4,7 @@ import React from 'react';
 
 const Resume = () => {
   return (
-    <div className='resume-page'>
+    <main className='resume-page'>
       <div className='title'>
         <h1>Resume</h1>
       </div>
@@ -23,9 +23,9 @@ const Resume = () => {
         </p>
       </div>
       <div className='skills-animation'>
-
+      
       </div>
-    </div>
+    </main>
   )
 }
 
