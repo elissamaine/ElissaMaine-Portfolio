@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main className="home">
+    <main className="home-page">
       <div className='text-area'>
         <h1>Home Page</h1>
         <p className='text'> 

@@ -1,4 +1,38 @@
-.me {
-  background-image: url('../../images/me.jpg');
-  height: 300px;
+.about-page {
+  display: flex;
+  color: #e6ffe0ff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  justify-content: space-around;
+
+  .div {
+    background-color: rgba(29, 73, 19, 0.87);
+    box-shadow: 3px 3px 3px #0e2d06ff;
+    padding: 10px;
+    border-radius: 25px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+  }
+
+  .about {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    align-items: start;
+    
+    h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      font-size: 3.5rem;
+      text-shadow: 2px 2px 2px #0e2d06ff;
+    }
+  }
+
+  img {
+    border-radius: 45px;
+    padding: 20px;
+    max-width: 450px;
+  }
 }
+

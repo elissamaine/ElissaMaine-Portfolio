@@ -1,11 +1,12 @@
 import './About.scss'
 
 import React from 'react'
+import image from '../../images/me.jpg'
 
 export default function About() {
   return (
     <main className='about-page'>
-      <div className='about'>
+      <div className='about div'>
         <h1>About Me</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
@@ -20,8 +21,8 @@ export default function About() {
           fames ac ante ipsum primis in faucibus. 
         </p>
       </div>
-      <div className='me'>
-        {/* <img src="../../images/me.jpg" alt="Elissa Maine" /> */}
+      <div className='div'>
+        <img src={image} alt="image of Elissa" />
       </div>
     </main>
   );

@@ -15,7 +15,7 @@ function Navbar({ currentPage, handlePageChange }) {
           >
             Home
           </a>
-          <div className='shine'></div>
+
         </li>
         <li className="nav-item">
           <a
@@ -25,7 +25,7 @@ function Navbar({ currentPage, handlePageChange }) {
           >
             About Me
           </a>
-          <div className='shine'></div>
+
         </li>
         <li className="nav-item">
           <a
@@ -35,7 +35,7 @@ function Navbar({ currentPage, handlePageChange }) {
           >
             Portfolio
           </a>
-          <div className='shine'></div>
+
         </li>
         <li className="nav-item">
           <a
@@ -45,7 +45,7 @@ function Navbar({ currentPage, handlePageChange }) {
           >
             Resume 
           </a>
-          <div className='shine'></div>
+
         </li>
         <li className="nav-item">
           <a
@@ -55,7 +55,7 @@ function Navbar({ currentPage, handlePageChange }) {
           >
             Contact Me 
           </a>
-          <div className='shine'></div>
+
         </li>
       </ul>   
     </div>
