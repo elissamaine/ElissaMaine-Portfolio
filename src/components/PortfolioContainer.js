@@ -38,14 +38,21 @@ export default function PortfolioContainer() {
   return (
     <div className='portfolio-container'>
       <div className='background-image'> h</div>
-      <Header />
+      <div className='element'>
+        <Header />
+      </div>
       
-      <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+      <div className='element'>
+        <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+      </div>
       
-      {renderPage()}
+      <div className='element render-page'>
+        {renderPage()}
+      </div>
       
-      <Footer />
-      
+      <div className='element'>
+        <Footer />
+      </div>
     </div>
   )
 }

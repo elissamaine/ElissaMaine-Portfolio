@@ -1,9 +1,9 @@
 .portfolio-container {
   font-family:'Varela Round', sans-serif;
+  position: relative;
 
-}
 
-.background-image {
+  .background-image {
   background-image: url('../images/navbackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,4 +13,12 @@
   position: fixed;
   z-index: -1;
   filter: blur(5px);
+  }
+  
+  .render-page {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+  }
 }
+
