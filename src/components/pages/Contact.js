@@ -2,7 +2,7 @@ import './Contact.scss';
 
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
@@ -45,29 +45,43 @@ const Contact = () => {
                 required
               ></textarea>
             </li>
-            <li>
-              <button type='submit'>Send</button>
+            <li className='button'>
+              <button className='send' type='submit'>Send</button>
             </li>
           </ul>
         </form>
       </div>
       <div className='social'>
-        <p>Contact form is under constuction. Other places that you can find me are here</p>
+        <p>Contact form is under constuction. Here are some other places you can find me:</p>
         <ul className='social-links'>
           <li className='linked-in'>
-            <a href="https://www.linkedin.com/in/elissa-maine-a9b4a3210/"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href="https://www.linkedin.com/in/elissa-maine-a9b4a3210/">
+              <span className='icon'><FontAwesomeIcon icon={faLinkedin} /> </span>
+              <span className='text'>GitHub</span>
+            </a>
           </li>
           <li className='git-hub'>
-            <a href="https://github.com/elissamaine"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href="https://github.com/elissamaine">
+              <span className='icon'>  <FontAwesomeIcon icon={faGithub} /></span>
+              <span className='text'>LinkedIn</span>
+            </a>
           </li>
           <li className='leet-code'>
-            <a href="https://leetcode.com/elissamaine/"><FontAwesomeIcon icon={faCode} bounce /></a>
+            <a href="https://leetcode.com/elissamaine/">
+              <span className='icon'><FontAwesomeIcon icon={faCode} /></span>
+              <span className='text'>LeetCode</span>
+            </a>
+          </li>
+          <li className='twitter'>
+            <a href="https://twitter.com/">
+              <span className='icon'><FontAwesomeIcon icon={faTwitter} /></span>
+              <span className='text'>Twitter</span>
+            </a>
           </li>
         </ul>
       </div>
     </main>
   );
-  
 }
 
 export default Contact
