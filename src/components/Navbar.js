@@ -23,7 +23,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange('About')}
             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
           >
-            About Me
+            About
           </a>
 
         </li>
@@ -53,7 +53,7 @@ function Navbar({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange('Contact')}
             className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
           >
-            Contact Me 
+            Contact 
           </a>
 
         </li>

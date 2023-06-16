@@ -12,8 +12,18 @@ const Contact = () => {
         <h1>Contact Me</h1>
         <form>
           <ul>
-            <li>
+            <li className='name-email'>
               <input 
+                className='name'
+                placeholder='Name'
+                type="text"
+                name='name'
+                required
+              />
+            </li>
+            <li className='name-email'>
+              <input 
+                className='email'
                 placeholder='Email'
                 type="email"
                 name="email"
@@ -22,6 +32,7 @@ const Contact = () => {
             </li>
             <li>
               <input 
+                className='subject'
                 placeholder='Subject'
                 type="text" 
                 name="subject"

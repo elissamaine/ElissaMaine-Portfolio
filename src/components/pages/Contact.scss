@@ -1,0 +1,96 @@
+.contact-page {
+  width: 100%;
+  display: flex;
+  justify-content: space-around; 
+
+  div {
+    background-color: rgba(29, 73, 19, 0.87);
+    box-shadow: 3px 3px 3px #0e2d06ff;
+    padding: 10px;
+    border-radius: 25px;
+    width: 45%;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      font-size: 3.5rem;
+      text-shadow: 2px 2px 2px #0e2d06ff;
+      align-self: flex-start;
+    }
+  }
+}
+
+
+
+.contact-form {
+  width: 70%;
+  margin-top: 20px;
+  height: 100%;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      overflow: hidden;
+      display: block;
+      clear: both;
+      position: relative;
+      animation: fadeInUp 2s;
+      animation-fill-mode: forwards;
+      width: 92%;
+      padding: 5px;
+    }
+
+    li.name-email {
+      width: 45%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+      height: 50px;
+      padding: 5px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .subject,
+  .email,
+  .name {
+    background-color:  rgba(35, 46, 30, 0.877);
+    border: none;
+    border-radius: 25px;
+    color: #3e524cff;
+    padding: 0 20px;
+    width: 100%;
+    height: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    box-shadow: 2px 2px 2px #0e2d06ff;
+  }
+
+  textarea {
+    background-color:  rgba(35, 46, 30, 0.877);
+    border: none;
+    border-radius: 25px;
+    color: #3e524cff;
+    padding: 0 20px;
+    width: 100%;
+    height: 100px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    box-shadow: 2px 2px 2px #0e2d06ff;
+
+  }
+}
