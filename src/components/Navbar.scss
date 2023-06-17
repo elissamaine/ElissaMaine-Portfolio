@@ -20,7 +20,8 @@ div {
       list-style: none;
       font-size: 1.3rem;
       font-family: 'Quicksand', sans-serif;
-
+      animation: fadeInDown;
+      animation-duration: 2s;
 
       a {
         text-decoration: none;
@@ -29,7 +30,10 @@ div {
       }
 
       a:hover {
-        color: #b6c9bbff;
+        color: #090e07ff;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-shadow: 0 0 10px rgb(254, 255, 254);
       }
     }
     

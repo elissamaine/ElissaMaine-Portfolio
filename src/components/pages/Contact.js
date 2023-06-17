@@ -57,13 +57,13 @@ const Contact = () => {
           <li className='linked-in'>
             <a href="https://www.linkedin.com/in/elissa-maine-a9b4a3210/">
               <span className='icon'><FontAwesomeIcon icon={faLinkedin} /> </span>
-              <span className='text'>GitHub</span>
+              <span className='text'>LinkedIn</span>
             </a>
           </li>
           <li className='git-hub'>
             <a href="https://github.com/elissamaine">
               <span className='icon'>  <FontAwesomeIcon icon={faGithub} /></span>
-              <span className='text'>LinkedIn</span>
+              <span className='text'>GitHub</span>
             </a>
           </li>
           <li className='leet-code'>
