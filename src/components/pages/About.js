@@ -21,7 +21,7 @@ export default function About() {
           fames ac ante ipsum primis in faucibus. 
         </p>
       </div>
-      <div className='div'>
+      <div className='image div'>
         <img src={image} alt="image of Elissa" />
       </div>
     </main>
