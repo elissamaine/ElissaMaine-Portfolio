@@ -62,7 +62,7 @@ const Contact = () => {
           </li>
           <li className='git-hub'>
             <a href="https://github.com/elissamaine">
-              <span className='icon'>  <FontAwesomeIcon icon={faGithub} /></span>
+              <span className='icon'><FontAwesomeIcon icon={faGithub} /></span>
               <span className='text'>GitHub</span>
             </a>
           </li>
