@@ -14,26 +14,29 @@
     position: relative;
 
     .project-img {
-      visibility: hidden;
+      visibility: visible;
       position: absolute;
       height: 100%;
       max-width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      z-index: 999;
-      
+      border-radius: 100px;
+      z-index: 2;
+      background-color: rgb(25, 129, 2);;
+
       img {
         width: 100%;
         height: 100%;
         border-radius: 100px;
-        box-shadow: 3px 3px 3px #0e2d06ff;
+        box-shadow: 0 0 10px #e6ffe0ff;
         object-fit: cover;
+        opacity: 1;
       }
     }
 
     .project-info {
-      // visibility: hidden;
+      visibility: hidden;
       position: absolute;
       width: 100%;
       height: 100%;
@@ -43,6 +46,28 @@
       align-items: center;
       
       
+      
+    }
+  }
+  
+  .project:hover {
+
+    .project-img {
+      visibility: hidden;
+      opacity: 0.15;
+      box-shadow: 0 0 10px #0e2d06ff;
+    }
+
+    .project-info {
+      visibility: visible;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
       h3 {
         font-family: 'Quicksand', sans-serif;
         font-weight: 300;
@@ -94,15 +119,6 @@
           transform: translate(0);
         }
       }
-    }
-  }
-  
-  .project:hover {
-
-    .project-img {
-      visibility: hidden;
-      opacity: 0.15;
-      box-shadow: 0 0 10px #0e2d06ff;
     }
   }
 }
