@@ -5,15 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 
-// import proj1 from '../images/proj1.PNG';
-// import proj2 from '../images/proj2.PNG';
-// import proj3 from '../images/proj3.PNG';
-// import proj4 from '../images/proj4.PNG';
-
 function Project(props) {
 
   return (
-    <div className='project-contaioner'>
+    <div className='project-card'>
       
       {props.projects.map(project => (
         <div className='project'>
