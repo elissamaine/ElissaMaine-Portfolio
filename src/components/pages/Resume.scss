@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 80px;
+  padding: 10px;
   
   .resume-container {
     background-color: rgba(29, 73, 19, 0.87);
@@ -12,20 +13,273 @@
     width: 95%;
     height: 650px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
 
-    .title {
-      align-self: flex-start;
+    .part1 {
+      width: 30%;
+      padding: 20px;
       padding-left: 10px;
 
-      h1 {
+      .title {
+        align-self: flex-start;
+        padding-left: 10px;
+
+        h1 {
+          font-family: 'Quicksand', sans-serif;
+          font-weight: 300;
+          font-size: 3.5rem;
+          color: #e6ffe0ff;
+          text-shadow: 2px 2px 2px #0e2d06ff;
+        }
+      }
+
+      p {
         font-family: 'Quicksand', sans-serif;
         font-weight: 300;
-        font-size: 3.5rem;
+        font-size: 1.5rem;
         color: #e6ffe0ff;
-        text-shadow: 2px 2px 2px #0e2d06ff;
+      }
+    }
+    
+
+    .skills-animation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 65%;
+      position: relative;
+      animation: fadeInUp 2s;
+
+      .swatch {
+        display: block;
+        text-align: center;
+        position: relative;
+        margin: 100px;
+        position: absolute;
+        bottom: 70%;
+        right: 40%;
+
+        div {
+          width: 150px;
+          height: 325px;
+          position: absolute;
+          top: 0px;
+          border-radius: 5px;
+          border-top: solid 2px rgba(0, 0, 0, 0.2);
+          border-left: solid 3px rgba(255, 255, 255, 0.2);
+          border-bottom: solid 3px rgba(0, 0, 0, 0.2);
+          text-align: center;
+          box-sizing: border-box;
+          transform-origin: center 90%;
+          display: inline-block;
+          backface-visibility: hidden;
+          margin-left: -35px;
+          transform: rotate(0deg);
+          background-color: #12220D;
+
+          .swatch-icon {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            font-size: 4rem;
+          }
+
+          .rotate-right {
+            rotate: 90deg;
+          }
+
+          .rotate-left {
+            rotate: -90deg;
+          }
+
+          .no-icon {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 300;
+            font-size: 2.5rem;
+            position: absolute;
+            right: 120px;
+            top: 110px;
+          }
+
+          .express{
+            position: absolute;
+            top: 150px;
+          }
+
+          &::before {
+            width: 16px;
+            height: 16px;
+            content: "";
+            background-color: #12220D;
+            display: inline-block;
+            border-radius: 8px;
+            bottom: 10px;
+            position: absolute;
+            margin-left: -8px;
+          }
+
+          &:nth-child(1) {
+            animation: first 10s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+          }
+
+          &:nth-child(2) {
+            animation: second 10s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+          }
+
+          &:nth-child(3) {
+            animation: third 10s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+          }
+
+          &:nth-child(4) {
+            animation: fourth 10s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+          }
+
+          &:nth-child(5) {
+            animation: fifth 10s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+          }
+
+          &:nth-child(6) {
+            animation: sixth 10s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+          }
+
+          &:nth-child(7) {
+            animation: seventh 10s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+          }
+
+          &:nth-child(8) {
+            animation: eighth 10s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+          }
+
+          &:nth-child(9) {
+            animation: ninth 10s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+          }
+
+          &:nth-child(10) {
+            animation: tenth 10s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+          }
+        }
       }
     }
   }
 }
 
+@keyframes first {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%, 70% {
+    transform: rotate(-108deg);
+  }
+  90%, 10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes second {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%, 70% {
+    transform: rotate(-84deg);
+  }
+  90%, 10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes third {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%, 70% {
+    transform: rotate(-60deg);
+  }
+  90%, 10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fourth {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%, 70% {
+    transform: rotate(-36deg);
+  }
+  90%, 10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fifth {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%, 70% {
+    transform: rotate(-12deg);
+  }
+  90%, 10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes sixth {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%, 70% {
+    transform: rotate(12deg);
+  }
+  90%, 10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes seventh {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%, 70% {
+    transform: rotate(36deg);
+  }
+  90%, 10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes eighth {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%, 70% {
+    transform: rotate(60deg);
+  }
+  90%, 10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes ninth {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%, 70% {
+    transform: rotate(84deg);
+  }
+  90%, 10% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes tenth {
+  0% {
+    transform: rotate(0deg);
+  }
+  30%, 70% {
+    transform: rotate(108deg);
+  }
+  90%, 10% {
+    transform: rotate(0deg);
+  }
+}
