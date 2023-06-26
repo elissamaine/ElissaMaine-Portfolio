@@ -1,15 +1,34 @@
 import './Contact.scss';
 
 import React from 'react';
+import { useEffect, useState } from 'react';
+import AnimatedLetters from '../AnimatedLetters.js'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
+  const [letterClass, setLetterClass] = useState('text-animate-hover');
+
+  const contactMe = 'Contact Me'.split('');
+
+  useEffect(() => {
+    return setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
+  }, [])
+
   return (
     <main className='contact-page'>
       <div className='contact-form'>
-        <h1>Contact Me</h1>
+        <h1>
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={contactMe}
+            idx={1}
+          />
+        </h1>
         <form>
           <ul>
             <li className='name-email'>

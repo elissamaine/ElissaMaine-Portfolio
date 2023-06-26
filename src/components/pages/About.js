@@ -9,7 +9,7 @@ import image from '../../images/me.jpg'
 export default function About() {
   const [letterClass, setLetterClass] = useState('text-animate-hover')
 
-  const strArray = 'About Me'.split('')
+  const aboutMe = 'About Me'.split('');
 
   useEffect(() => {
     return setTimeout(() => {
@@ -23,7 +23,7 @@ export default function About() {
         <h1>
           <AnimatedLetters 
             letterClass={letterClass}
-            strArray={strArray}
+            strArray={aboutMe}
             idx={1}
           />
         </h1>
