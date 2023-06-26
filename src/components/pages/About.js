@@ -7,7 +7,7 @@ import AnimatedLetters from '../AnimatedLetters.js'
 import image from '../../images/me.jpg'
 
 export default function About() {
-  const [letterClass, setLetterClass] = useState('text-animate-hover')
+  const [letterClass, setLetterClass] = useState('text-animate-hover');
 
   const aboutMe = 'About Me'.split('');
 
