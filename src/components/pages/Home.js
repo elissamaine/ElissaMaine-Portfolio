@@ -1,8 +1,20 @@
 import './Home.scss'
 
 import React from "react";
+import { useEffect, useState } from 'react';
+import AnimatedLetters from '../AnimatedLetters.js';
 
 export default function Home() {
+  const [letterClass, setLetterClass] = useState('text-animate');
+
+  const home = 'Elissa Maine - Full Stack Web Developer'.split('');
+
+  useEffect(() => {
+    return setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
+  }, []);
+
   return (
     <main className="home-page">
       <div className='text-area'>
