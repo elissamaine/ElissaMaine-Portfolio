@@ -3,19 +3,19 @@ import './About.scss'
 import React from 'react'
 import { useEffect, useState } from 'react';
 
-import AnimatedLetters from '../AnimatedLetters.js'
+import AnimatedLetters from '../AnimatedLetters.js';
 import image from '../../images/me.jpg'
 
 export default function About() {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState('text-animate-hover');
 
-  const strArray = 'About Me'.split('')
+  const aboutMe = 'About Me'.split('');
 
   useEffect(() => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
-  }, [])
+  }, []);
 
   return (
     <main className='about-page'>
@@ -23,8 +23,8 @@ export default function About() {
         <h1>
           <AnimatedLetters 
             letterClass={letterClass}
-            strArray={strArray}
-            idx={0}
+            strArray={aboutMe}
+            idx={1}
           />
         </h1>
         <p>

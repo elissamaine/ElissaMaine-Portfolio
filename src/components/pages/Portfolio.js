@@ -7,6 +7,9 @@ import proj3 from '../../images/proj3.PNG';
 import proj4 from '../../images/proj4.PNG';
 
 import React from 'react';
+import { useEffect, useState } from 'react';
+
+import AnimatedLetters from '../AnimatedLetters.js';
 
 const projects = [
   {
@@ -40,11 +43,27 @@ const projects = [
 ]
 
 const Portfolio = () => {
+  const [letterClass, setLetterClass] = useState('text-animate-hover');
+
+  const portfolio = 'Portfolio'.split('');
+
+  useEffect(() => {
+    return setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
+  }, [])
+
   return (
     <main className='portfolio-page'>
       <div className='portfolio-page-container'>
         <div className='title'>
-          <h1>Portfolio</h1>
+          <h1>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={portfolio}
+              idx={1}
+            />
+          </h1>
         </div>
         <div className='project-container'>
           <Project projects={projects} />

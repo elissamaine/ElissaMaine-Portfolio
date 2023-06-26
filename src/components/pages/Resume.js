@@ -1,6 +1,8 @@
 import './Resume.scss';
 
 import React from 'react';
+import { useEffect, useState } from 'react';
+import AnimatedLetters from '../AnimatedLetters.js';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
@@ -12,16 +14,31 @@ import {
   faSass, 
   faBootstrap, 
 } from '@fortawesome/free-brands-svg-icons';
-
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 const Resume = () => {
+  const [letterClass, setLetterClass] = useState('text-animate-hover');
+
+  const resume = 'Resume'.split('');
+
+  useEffect(() => {
+    return setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
+  }, []);
+
   return (
     <main className='resume-page'>
       <div className='resume-container'>
         <div className='part1'>
           <div className='title'>
-            <h1>Resume</h1>
+            <h1>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={resume}
+                idx={1}
+              />
+            </h1>
           </div>
           <div>
             <p>
