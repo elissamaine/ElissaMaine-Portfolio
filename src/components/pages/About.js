@@ -1,13 +1,32 @@
 import './About.scss'
 
 import React from 'react'
+import { useEffect, useState } from 'react';
+
+import AnimatedLetters from '../AnimatedLetters.js'
 import image from '../../images/me.jpg'
 
 export default function About() {
+  const [letterClass, setLetterClass] = useState('text-animate')
+
+  const strArray = 'About Me'.split('')
+
+  useEffect(() => {
+    return setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
+  }, [])
+
   return (
     <main className='about-page'>
       <div className='about div'>
-        <h1>About Me</h1>
+        <h1>
+          <AnimatedLetters 
+            letterClass={letterClass}
+            strArray={strArray}
+            idx={0}
+          />
+        </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
           velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
