@@ -7,7 +7,7 @@ import AnimatedLetters from '../AnimatedLetters.js'
 import image from '../../images/me.jpg'
 
 export default function About() {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState('text-animate-hover')
 
   const strArray = 'About Me'.split('')
 
@@ -24,7 +24,7 @@ export default function About() {
           <AnimatedLetters 
             letterClass={letterClass}
             strArray={strArray}
-            idx={0}
+            idx={1}
           />
         </h1>
         <p>

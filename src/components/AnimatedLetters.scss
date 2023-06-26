@@ -3,7 +3,7 @@
   opacity: 0;
   animation: zoomIn;
   animation-duration: 1s;
-  animation-delay: 1s;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
   min-width: 10px;
 }
@@ -14,7 +14,7 @@
   animation-fill-mode: both;
 
   &:hover {
-    animation: wobble 1s;
+    animation: flash 1s;
     color: #e6ffe0ff;
   }
 }
