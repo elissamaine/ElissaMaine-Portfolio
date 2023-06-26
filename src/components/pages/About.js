@@ -3,7 +3,7 @@ import './About.scss'
 import React from 'react'
 import { useEffect, useState } from 'react';
 
-import AnimatedLetters from '../AnimatedLetters.js'
+import AnimatedLetters from '../AnimatedLetters.js';
 import image from '../../images/me.jpg'
 
 export default function About() {
@@ -15,7 +15,7 @@ export default function About() {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
-  }, [])
+  }, []);
 
   return (
     <main className='about-page'>
