@@ -18,7 +18,13 @@ export default function Home() {
   return (
     <main className="home-page">
       <div className='text-area'>
-        <h1>Home Page</h1>
+        <h1>
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={home}
+            idx={1}
+          />
+        </h1>
         <p className='text'> 
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
           velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
