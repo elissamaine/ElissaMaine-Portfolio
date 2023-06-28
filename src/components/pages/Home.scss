@@ -5,25 +5,74 @@
   display: flex;
   justify-content: space-around;
   
-  
-  div {
+  .text-area {
     background-color: rgba(29, 73, 19, 0.87);
     box-shadow: 3px 3px 3px #0e2d06ff;
     padding: 10px;
     border-radius: 25px;
-    width: 45%;
-  } 
+    width: 1200px;
+    height: 700px;
+    position: relative;
   
-  .text-area {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
-    font-size: 1.3rem;
-    
     h1 {
+      position: absolute;
+      font-family: 'Ysabeau SC', sans-serif;
+      font-weight: 300;
+      font-size: 4.5rem;
+      text-shadow: 3px 3px 10px #0e2d06ff;
+    }
+
+    .name {
+      top: 40%;
+      right: 20%;
+      font-size: 6.5rem;
+    }
+
+    .job {
+      top: 55%;
+      right: 20%;
+    }
+
+    p {
       font-family: 'Quicksand', sans-serif;
       font-weight: 300;
-      font-size: 3.5rem;
-      text-shadow: 2px 2px 2px #0e2d06ff;
+      font-size: 1.5rem;
+      color: #e6ffe0ff;
+      position: absolute;
+      top: 80%;
+      left: 10%;
+      visibility: hidden;
     }
+
+    .fairy {
+      width: 280px;
+      position: absolute;
+      top: 8%;
+      left: 20%;
+      animation: fadeIn 2s;
+      animation: shakeY 40s infinite;
+    }
+
+  } 
+}
+
+@media screen and (max-width: 700px) {
+  .text-area {
+    width: 90%
+  }
+  
+  .name {
+    font-size: 6rem;
+    right: 15%;
+  }
+
+  .job {
+    font-size: 3rem;
+    right: 15%;
+  }
+
+  .fairy {
+    width: 200px;
+    left: 10%;
   }
 }

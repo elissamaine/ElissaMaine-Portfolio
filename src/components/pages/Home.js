@@ -4,10 +4,14 @@ import React from "react";
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters.js';
 
+import fairy from '../../images/fairy.png'
+
+
 export default function Home() {
   const [letterClass, setLetterClass] = useState('text-animate');
 
-  const home = 'Elissa Maine - Full Stack Web Developer'.split('');
+  const name = 'Elissa Maine'.split('');
+  const job = 'Full Stack Web Developer'.split('');
 
   useEffect(() => {
     return setTimeout(() => {
@@ -18,28 +22,26 @@ export default function Home() {
   return (
     <main className="home-page">
       <div className='text-area'>
-        <h1>
+        <h1 className='name'>
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={home}
+            strArray={name}
             idx={1}
           />
         </h1>
+        <h1 className='job'>
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={job}
+            idx={12}
+          />
+        </h1>
         <p className='text'> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-          velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-          ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-          non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-          ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-          rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-          tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-          porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-          vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. 
+          Lorem ipsum dolor
         </p>
-      </div>
-      <div>
-      <p>some other stuff</p>
+        <div className='fairy'>
+          <img src={fairy} alt="" />
+        </div>
       </div>
     </main>
   );
