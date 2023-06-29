@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 80px;
+  padding: 0 80px;
   
   .resume-container {
     background-color: rgba(29, 73, 19, 0.87);
@@ -45,6 +46,7 @@
         font-size: 1.5rem;
         color: #e6ffe0ff;
         animation: fadeInUp 2s;
+        padding: 30px;
       }
     }
     
@@ -287,5 +289,42 @@
   }
   90%, 10% {
     transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .resume-page .resume-container .part1 p {
+    padding-right: 0;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .resume-page {
+    padding: 0;
+  }
+
+  .resume-page .resume-container {
+    height: 1000px;
+    position: relative;
+    display: flex;
+    
+  }
+
+  .resume-page .resume-container .part1 {
+    position: absolute;
+    width: 90%;
+  }
+
+  .resume-page .resume-container .part1 p {
+    padding-right: 0;
+    padding-top: 20px;
+    position: absolute;
+    top: 650px;
+    left: 0;
+  }
+
+  .resume-page .resume-container .skills-animation .swatch {
+    bottom: 75%;
   }
 }
