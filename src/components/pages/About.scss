@@ -6,6 +6,7 @@
   justify-content: space-around;
   margin-bottom: 80px;
   // align-items: flex-start;
+  padding: 0 60px;
 
   .div {
     background-color: rgba(29, 73, 19, 0.87);
@@ -14,6 +15,7 @@
     border-radius: 25px;
     width: 45%;
     display: flex;
+    
   }
 
   .about {
@@ -44,6 +46,7 @@
     align-items: center;
     // margin: 20px;
     padding: 20px;
+    width: 600px;
     
     img {
       border-radius: 45px;
@@ -55,5 +58,37 @@
     }
   }
 
+}
+
+@media screen and (max-width: 1500px) {
+  .about-page {
+    padding: 0;
+    
+  }
+
+  .about-page .image {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .about-page {
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  .about-page .div {
+    width: 700px;
+    height: 45%;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  .about-page .about {
+    padding-bottom: 50px;
+  }
 }
 
