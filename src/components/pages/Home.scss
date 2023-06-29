@@ -56,23 +56,55 @@
   } 
 }
 
-@media screen and (max-width: 700px) {
-  .text-area {
+@media screen and (max-width: 1300px) {
+  .home-page .text-area {
     width: 90%
   }
   
-  .name {
+  .home-page .text-area .name {
     font-size: 6rem;
     right: 15%;
   }
 
-  .job {
-    font-size: 3rem;
+  .home-page .text-area .job {
+    font-size: 4rem;
     right: 15%;
   }
 
-  .fairy {
-    width: 200px;
+  .home-page .text-area .fairy {
     left: 10%;
   }
+}
+
+@media screen and (max-width: 1000px) {
+  
+  .home-page .text-area .name {
+    font-size: 6rem;
+    right: 15%;
+  }
+
+  .home-page .text-area .job {
+    font-size: 3rem;
+    right: 15%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  
+  .home-page .text-area .name {
+    font-size: 5rem;
+    right: 10%;
+  }
+
+  .home-page .text-area .job {
+    font-size: 3rem;
+    top: 50%;
+    right: 10%;
+  }
+
+  .home-page .text-area .fairy {
+    left: 10%;
+    width: 230px;
+    top: 20%;
+  } 
 }

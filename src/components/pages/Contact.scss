@@ -33,6 +33,7 @@
   ul {
     padding: 0;
     margin: 0;
+    // display: block;
 
     li {
       padding: 0;
@@ -41,13 +42,18 @@
       margin-bottom: 10px;
       opacity: 0;
       overflow: hidden;
-      display: block;
+      display: flex;
+      justify-content: space-around;
       clear: both;
       position: relative;
       animation: fadeInUp 2s;
       animation-fill-mode: forwards;
       width: 92%;
       padding: 5px;
+
+      a {
+        position: absolute;
+      }
     }
 
     li:hover {
