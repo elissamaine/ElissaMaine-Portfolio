@@ -14,6 +14,8 @@
     position: relative;
     animation: fadeInUp 2s;
     animation-fill-mode: forwards;
+    max-width: 420px;
+    margin: 20px;
 
     .project-img {
       visibility: visible;
@@ -25,7 +27,8 @@
       align-items: center;
       border-radius: 100px;
       z-index: 2;
-      background-color: rgb(25, 129, 2);;
+      background-color: rgb(25, 129, 2);
+      left: center;
 
       img {
         width: 100%;
@@ -76,6 +79,7 @@
         font-size: 1.8rem;
         color: #e6ffe0ff;
         text-shadow: 2px 2px 2px #0e2d06ff;
+        
       }
 
       p {
