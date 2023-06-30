@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ElissaMaine-Portfolio/static/css/main.f70c0bb3.css",
+    "main.js": "/ElissaMaine-Portfolio/static/js/main.52d2e54d.js",
+    "static/media/me.jpg": "/ElissaMaine-Portfolio/static/media/me.0a69254afeafd83e9cfd.jpg",
+    "static/media/proj3.PNG": "/ElissaMaine-Portfolio/static/media/proj3.186a660015bd47f082bd.PNG",
+    "static/media/navbackground.jpg": "/ElissaMaine-Portfolio/static/media/navbackground.80ff23783e37e3ecb1a5.jpg",
+    "static/media/proj4.PNG": "/ElissaMaine-Portfolio/static/media/proj4.d5e8dd054d1c1e79c1ca.PNG",
+    "static/media/fairy.png": "/ElissaMaine-Portfolio/static/media/fairy.4f56f1f6085ce7537358.png",
+    "static/media/proj2.PNG": "/ElissaMaine-Portfolio/static/media/proj2.3023360fba85c0c44609.PNG",
+    "static/media/proj1.PNG": "/ElissaMaine-Portfolio/static/media/proj1.54d6912bfd62e59b2d80.PNG",
+    "index.html": "/ElissaMaine-Portfolio/index.html",
+    "main.f70c0bb3.css.map": "/ElissaMaine-Portfolio/static/css/main.f70c0bb3.css.map",
+    "main.52d2e54d.js.map": "/ElissaMaine-Portfolio/static/js/main.52d2e54d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f70c0bb3.css",
+    "static/js/main.52d2e54d.js"
+  ]
+}
