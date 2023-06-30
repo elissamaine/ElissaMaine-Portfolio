@@ -39,9 +39,12 @@ export default function Home() {
         <p className='text'> 
           Lorem ipsum dolor
         </p>
-        <div className='fairy'>
-          <img src={fairy} alt="" />
+        <div className='fairy-container'>
+          <div className='fairy'>
+            <img src={fairy} alt="" />
+          </div>
         </div>
+
       </div>
     </main>
   );
