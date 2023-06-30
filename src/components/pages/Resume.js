@@ -42,10 +42,21 @@ const Resume = () => {
           </div>
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-              velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-              ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-              non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdie
+              Proficient in front end and back end technologies and programming languages as shown as well as:
+              <br/>
+              <span className='skills'>
+                🌱 SQL
+                <br/>
+                🌱 NoSQL
+                <br/>
+                🌱 MySQL
+                <br/>
+                🌱 MongoDB
+                <br/>
+                🌱 GraphQL
+                <br/>
+                🌱 jQuery
+              </span>
             </p>
           </div>
         </div>
