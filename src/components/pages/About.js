@@ -32,9 +32,11 @@ export default function About() {
         <br/>
         My name is Elissa Maine and am a recent full stack coding bootcamp graduate looking to start my career. 
         <br/>
+        ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆
         <br/>
         I originally got my degree in Geology from San Diego State University, but after moving to Vancouver Washington I decided to change career paths and took a coding bootcamp. I have become passionate about designing and creating projects and I enjoy challenging myself to learn new skills.
         <br/>
+        ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆
         <br/>
         I am proficient in front end and back end development but I’ve grown to favor front end development and figuring out how to make a site more interactive and enjoyable for the user. 
         </p>
