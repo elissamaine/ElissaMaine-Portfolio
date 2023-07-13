@@ -1,10 +1,11 @@
 import './Portfolio.scss';
 
 import Project from '../Project.js';
-import proj1 from '../../images/proj1.PNG';
+// import proj1 from '../../images/proj1.PNG';
 import proj2 from '../../images/proj2.PNG';
 import proj3 from '../../images/proj3.PNG';
 import proj4 from '../../images/proj4.PNG';
+import proj5 from '../../images/proj5.png';
 
 import React from 'react';
 import { useEffect, useState } from 'react';
@@ -13,12 +14,19 @@ import AnimatedLetters from '../AnimatedLetters.js';
 
 const projects = [
   {
-    title: 'Story Finder',
-    description: 'A site for resders to find and save books.',
-    image: proj1,
-    github: 'https://github.com/b-crites/BookClub',
-    deployed: 'https://b-crites.github.io/BookClub/'
+    title: 'Dopamine Box',
+    description: 'An app that helps you build healthy habits to improve your mental health, and achieve your goals through positive reinforcement.',
+    image: proj5,
+    github: 'https://github.com/sethleininger/dopamine-box',
+    deployed: 'https://dopamine-box-178888939ab3.herokuapp.com/'
   },
+  // {
+  //   title: 'Story Finder',
+  //   description: 'A site for resders to find and save books.',
+  //   image: proj1,
+  //   github: 'https://github.com/b-crites/BookClub',
+  //   deployed: 'https://b-crites.github.io/BookClub/'
+  // },
   {
     title: 'Password Generator',
     description: 'A simple pasword generator that allows the user to select the length and type of characters to include in their password.',
