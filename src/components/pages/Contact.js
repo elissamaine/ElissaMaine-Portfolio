@@ -1,8 +1,9 @@
 import './Contact.scss';
 
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import AnimatedLetters from '../AnimatedLetters.js'
+import emailjs from '@emailjs/browser';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -12,12 +13,35 @@ const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate-hover');
 
   const contactMe = 'Contact Me'.split('');
+  const socialMedia = 'Social Media'.split('');
 
   useEffect(() => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
-  }, [])
+  }, []);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          alert('message sent successfully...');
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <main className='contact-page'>
@@ -29,7 +53,7 @@ const Contact = () => {
             idx={1}
           />
         </h1>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <ul>
             <li className='name-email'>
               <input 
@@ -71,7 +95,13 @@ const Contact = () => {
         </form>
       </div>
       <div className='social'>
-        <p>Contact form is under constuction. Here are some other places you can find me:</p>
+        <h1>
+          <AnimatedLetters
+          letterClass={letterClass}
+          strArray={socialMedia}
+          idx={1}
+          />
+        </h1>
         <ul className='social-links'>
           <li className='linked-in'>
             <a href="https://www.linkedin.com/in/elissa-maine-a9b4a3210/">
