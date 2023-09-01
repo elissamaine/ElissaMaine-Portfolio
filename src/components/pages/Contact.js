@@ -13,6 +13,7 @@ const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate-hover');
 
   const contactMe = 'Contact Me'.split('');
+  const socialMedia = 'Social Media'.split('');
 
   useEffect(() => {
     return setTimeout(() => {
@@ -94,7 +95,13 @@ const Contact = () => {
         </form>
       </div>
       <div className='social'>
-        <p>Contact form is under constuction. Here are some other places you can find me:</p>
+        <h1>
+          <AnimatedLetters
+          letterClass={letterClass}
+          strArray={socialMedia}
+          idx={1}
+          />
+        </h1>
         <ul className='social-links'>
           <li className='linked-in'>
             <a href="https://www.linkedin.com/in/elissa-maine-a9b4a3210/">
