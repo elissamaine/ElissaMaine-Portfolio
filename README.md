@@ -24,6 +24,8 @@
        - [Used Color Fan as a reference for my skills animation](https://codepen.io/nitishkmrk/pen/jyYEop)
        - [Animate.css](https://animate.style/)
        - [Font Awsome icons](https://fontawesome.com/search?q=box&o=r&m=free)
+  - [EmailJs](https://www.emailjs.com/)  
+       -[Tutorial to set up contact page functionality](https://hackernoon.com/integrating-a-contact-form-with-emailjs-in-react)
 
   ## Images
   ![image of home page](./src/images/portfolio1.PNG)
